@@ -25,10 +25,10 @@
                         </a>
                         <div></div>
                         <ul>
-                            <li><a href="#">En Venta</a></li>
-                            <li><a href="#">En Arriendo</a></li>
-                            <li><a href="#">Testimonios</a></li>
-                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="./propiedades_venta.html">En Venta</a></li>
+                            <li><a href="./propiedades_alquiler.html">En Arriendo</a></li>
+                            <li><a href="#contact-form">Contacto</a></li>
                         </ul>
                     </nav>
                     <div class="nav-underline"></div>
@@ -48,13 +48,52 @@
                     <h1>Propiedades en Venta</h1>
                 </div>
             </div>
-            <div class="cards">
+            <!-- Propiedades en venta -->
+                <div class="cards">
                     <div id="properties-container" class="properties-container">
-                        <!-- Las tarjetas se insertan aquí de forma dinámica por JavaScript -->
+                        <!-- Las top 3 tarjetas en venta se insertan aquí de forma dinámica por JavaScript -->
                     </div>
+                </div>
 
-            </div>
+            <!-- Propiedades en arriendo -->
+                <div class="ads-main-heading"> 
+                    <h1>Propiedades en Arriendo</h1>
+                </div>
+                <div class="cards">
+                    <div id="properties-container-rent" class="properties-container-rent">
+                        <!-- Las top 3 tarjetas de alquiler se insertan aquí de forma dinámica por JavaScript -->
+                    </div>
+                </div>
         </section>
+        <!-- Formulario -->
+        
+
+        <div class="contact-form" id="contact-form">
+            <h3>Contáctanos</h3>
+            <form>
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+        
+                <label for="lname">Apellido</label>
+                <input type="text" id="lname" name="lastname" placeholder="Tu apellido...">
+        
+            <label for="country">País</label>
+            <select id="country" name="country">
+                <option value="">Selecciona</option>
+                <option value="cl">Chile</option>
+                <option value="mx">México</option>
+                <option value="usa">Colombia</option>
+                <option value="usa">Perú</option>
+            </select>
+        
+            <label for="subject">Mensaje</label>
+            <textarea id="subject" name="subject" placeholder="Deja tu mensaje.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+        
+
         <!-- Footer -->
         <footer>
             <div class="footer-main">
